@@ -1,0 +1,15 @@
+Dokumentace třídy ManualButton:
+
+Třída ManualButton poskytuje tlačítko pro zobrazení nápovědy a návodů k použití programu v rámci uživatelského rozhraní.
+
+Metody:
+1. __init__(parent):
+   Inicializační metoda třídy ManualButton, která vytváří a inicializuje instanci tlačítka pro zobrazení nápovědy.
+
+2. open_manual_window():
+   Metoda pro otevření dialogového okna s nápovědou, které obsahuje návody k použití programu.
+
+3. show_exception_message(title, exception):
+   Metoda pro zobrazení dialogu s chybovou zprávou.
+
+Poznámka: Tato třída slouží k poskytnutí uživatelskému rozhraní možnost pro zobrazení nápovědy a návodů k použití programu.

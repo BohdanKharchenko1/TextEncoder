@@ -1,0 +1,16 @@
+
+Dokumentace pro soubor main.py:
+
+Skript main.py slouží k spuštění uživatelského rozhraní pro aplikaci Encoder and Decoder.
+
+Použité knihovny:
+- PyQt5.QtWidgets: Pro vytvoření hlavního okna aplikace a zobrazení uživatelského rozhraní.
+
+Funkce:
+- main(): Funkce inicializuje a spustí hlavní okno aplikace. Vytvoří instanci třídy Main_UI z modulu src.user_interface.UI
+  a zobrazí ji pomocí QApplication.
+
+Poznámky:
+- Soubor main.py slouží k inicializaci a spuštění uživatelského rozhraní pro aplikaci Encoder and Decoder.
+- Využívá knihovnu PyQt5.QtWidgets.
+- Hlavní okno (Main_UI) je vytvořeno pomocí PyQt5.QtWidgets a zobrazeno po spuštění aplikace.

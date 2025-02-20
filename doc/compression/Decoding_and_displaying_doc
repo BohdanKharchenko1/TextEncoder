@@ -1,0 +1,16 @@
+
+Dokumentace funkce read_and_decode:
+
+Funkce read_and_decode slouží k čtení a dekódování zakódovaných dat ze vstupního souboru.
+
+Parametry:
+- input_file (str): Cesta k vstupnímu souboru. (Volitelný, pokud není poskytnut, použije se výchozí konfigurovaný výstupní soubor.)
+
+Návratová hodnota:
+- decoded_text (str): Dekódovaný text.
+
+Výjimky:
+- ValueError: Vyvolá se, pokud není poskytnut vstupní soubor a výchozí výstupní soubor není konfigurován.
+
+Poznámka: Tato funkce používá třídu Decoder pro dekódování zakódovaných dat. Pokud dojde k chybě, funkce vrátí None.
+

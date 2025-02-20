@@ -1,0 +1,22 @@
+
+Dokumentace třídy Decoder:
+
+Třída Decoder slouží k dekódování zakódovaných dat na základě algoritmu LZW (Lempel-Ziv-Welch).
+
+Metody:
+- __init__(): Inicializuje instanci třídy Decoder. Vytvoří slovník pro dekódování a nastaví počáteční hodnoty.
+
+- decode(encoded_data: List[int]) -> str: Dekóduje zakódovaná data na základě algoritmu LZW.
+
+    Parametry:
+    - encoded_data (List[int]): Seznam zakódovaných dat.
+
+    Návratová hodnota:
+    - str: Dekódovaný text.
+
+    Výjimky:
+    - ValueError: Vyvolá se, pokud je v zakódovaných datech nalezen neplatný kód.
+
+Poznámky:
+- Tato třída implementuje algoritmus LZW pro dekódování dat.
+- Pokud dojde k chybě během dekódování, metoda vrátí prázdný řetězec a vypíše chybovou zprávu.

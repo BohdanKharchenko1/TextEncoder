@@ -1,0 +1,23 @@
+
+Dokumentace třídy Encoder:
+
+Třída Encoder slouží k zakódování vstupního textu na základě algoritmu LZW (Lempel-Ziv-Welch).
+
+Metody:
+- __init__(): Inicializuje instanci třídy Encoder. Vytvoří slovník pro kódování a nastaví počáteční hodnoty.
+
+- encode(input_text: str) -> List[int]: Zakóduje vstupní text na základě algoritmu LZW.
+
+    Parametry:
+    - input_text (str): Vstupní text, který se má zakódovat.
+
+    Návratová hodnota:
+    - List[int]: Seznam zakódovaných dat.
+
+    Výjimky:
+    - ValueError: Vyvolá se, pokud dojde k chybě během kódování.
+
+Poznámky:
+- Tato třída implementuje algoritmus LZW pro kódování textu.
+- Pokud dojde k chybě během kódování, metoda vrátí prázdný seznam a vypíše chybovou zprávu.
+

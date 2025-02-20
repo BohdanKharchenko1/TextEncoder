@@ -1,0 +1,76 @@
+
+Dokumentace třídy Main_UI:
+
+Třída Main_UI slouží jako hlavní grafické uživatelské rozhraní pro aplikaci Encoder and Decoder. Poskytuje funkcionalitu pro práci s soubory, kódování, dekódování, nastavení konfigurace a zobrazení logů.
+
+Atributy:
+- manual_button: (QPushButton) Tlačítko pro otevření okna nápovědy (manual).
+- manual_handler: (ManualButton) Handler pro ovládání okna nápovědy.
+- config_button: (QPushButton) Tlačítko pro otevření okna konfigurace.
+- switch_button: (QPushButton) Tlačítko pro přepínání mezi pohledem logů a dekódovaného textu.
+- logger: (Logger) Instance třídy Logger pro zaznamenávání zpráv.
+- config_manager: (ConfigurationManager) Instance ConfigurationManager pro správu konfigurace.
+- input_file_entry: (QLineEdit) Widget pro zadání cesty vstupního souboru.
+- output_file_entry: (QLineEdit) Widget pro zadání cesty výstupního souboru.
+- stacked_widget: (QStackedWidget) Widget pro přepínání mezi pohledem logů a dekódovaného textu.
+- log_text: (QTextEdit) Widget pro zobrazení logů.
+- decoded_text: (QTextEdit) Widget pro zobrazení dekódovaného textu.
+- encode_button: (QPushButton) Tlačítko pro provedení kódovací operace.
+- decode_button: (QPushButton) Tlačítko pro provedení dekódovací operace.
+
+Metody:
+1. __init__(self):
+
+   Konstruktor pro inicializaci objektu Main_UI.
+
+
+2. pack_widgets(self):
+
+   Nastavuje a pozicuje všechny widgety v hlavním okně.
+
+
+3. show_decoded_text(self, decoded_text):
+
+   Zobrazuje dekódovaný text ve widgetu QTextEdit.
+
+   Parametry:
+   - decoded_text (str): Text k zobrazení.
+
+
+4. log(self, message):
+
+   Zaznamenává zprávu do logu a přidává ji do log_text.
+
+   Parametry:
+   - message (str): Zpráva k přidání do logu.
+
+
+5. log_error(self, message):
+
+   Zaznamenává chybovou zprávu do logu a přidává ji do log_text.
+
+   Parametry:
+   - message (str): Chybová zpráva k zaznamenání.
+
+
+6. open_config_window(self):
+
+   Otevírá okno konfigurace a aktualizuje nastavení konfigurace.
+
+
+7. switch_text_view(self):
+
+   Přepíná mezi pohledem logů a dekódovaného textu.
+
+
+8. show_exception_message(title, exception):
+
+   Zobrazuje QMessageBox s chybovou zprávou.
+
+   Parametry:
+   - title (str): Nadpis QMessageBox.
+   - exception (Exception): Chyba, která nastala.
+
+
+Poznámka: Využívá pomocné třídy a moduly pro práci se soubory, kódováním, dekódováním a správou konfigurace.
+

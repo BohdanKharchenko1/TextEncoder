@@ -1,0 +1,21 @@
+
+Dokumentace třídy ConfigurationManager:
+
+Třída ConfigurationManager slouží k práci s konfiguračním souborem.
+
+Metody:
+1. __init__(config_dir="config", config_file="config.ini"):
+   Inicializační metoda třídy ConfigurationManager, která nastavuje cesty k konfiguračnímu souboru a adresáři.
+
+2. _create_config_file():
+   Privátní metoda pro vytvoření konfiguračního souboru, pokud neexistuje. Nastavuje výchozí hodnoty konfigurace.
+
+3. load_config():
+   Načte konfigurační soubor a vrátí hodnoty výchozí sekce (DEFAULT) jako slovník.
+
+4. update_config(new_config):
+   Aktualizuje konfigurační soubor novými hodnotami podle zadaného slovníku new_config.
+
+Poznámka: Tato třída usnadňuje práci s konfiguračním souborem a poskytuje mechanismus pro jeho inicializaci,
+načítání a aktualizaci hodnot.
+

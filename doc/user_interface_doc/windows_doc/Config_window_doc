@@ -1,0 +1,23 @@
+
+Dokumentace třídy ConfigWindow:
+
+Třída ConfigWindow poskytuje okno pro konfiguraci výstupních parametrů programu.
+
+Metody:
+1. __init__():
+   Inicializační metoda třídy ConfigWindow, která vytváří a inicializuje instance widgetů a nastavuje jejich vlastnosti.
+
+2. browse_path():
+   Metoda pro vybrání výstupního adresáře pomocí dialogu pro procházení souborů.
+
+3. load_config():
+   Metoda pro načtení aktuální konfigurace a nastavení hodnot widgetů podle této konfigurace.
+
+4. save_config():
+   Metoda pro uložení nové konfigurace na základě hodnot zadaných do widgetů.
+
+5. show_exception_message(title, exception):
+   Statická metoda pro zobrazení dialogu s chybovou zprávou.
+
+Poznámka: Tato třída slouží k nastavení výstupního adresáře a názvu výstupního souboru pro operace kódování a dekódování dat.
+

@@ -1,0 +1,20 @@
+
+Dokumentace třídy Logger:
+
+Třída Logger slouží k záznamu logovacích zpráv a chyb do souboru.
+
+Metody:
+1. __init__(log_dir="log", log_file="program_log.log"):
+   Inicializační metoda třídy Logger, která nastavuje cesty k logovacím souborům a konfiguruje logger.
+
+2. _configure_logger():
+   Privátní metoda pro konfiguraci loggeru, která nastavuje formát zpráv, úroveň logování a vytváří logovací soubory.
+
+3. log(message):
+   Statická metoda pro zaznamenání informační logovací zprávy.
+
+4. log_error(message):
+   Statická metoda pro zaznamenání chybové logovací zprávy.
+
+Poznámka: Tato třída poskytuje mechanismus pro záznam logovacích zpráv a chyb do souboru pro sledování chodu programu.
+

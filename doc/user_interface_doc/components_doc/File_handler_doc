@@ -1,0 +1,18 @@
+
+Dokumentace třídy FileHandler:
+
+Třída FileHandler poskytuje statickou metodu pro otevírání dialogu pro procházení a výběr souborů pomocí QFileDialog z knihovny PyQt5.QtWidgets.
+
+Metoda:
+1. browse_file(entry_type, input_file_entry, output_file_entry):
+
+   Metoda pro otevření dialogu pro procházení a výběr souborů.
+
+   Parametry:
+   - entry_type (str): Určuje typ vstupu, může být 'input' nebo 'output'.
+   - input_file_entry (QLineEdit): Widget pro zadání cesty vstupního souboru.
+   - output_file_entry (QLineEdit): Widget pro zadání cesty výstupního souboru.
+
+
+Poznámka: Tato třída slouží k obsluze operací souborů v rámci grafického uživatelského rozhraní a nemá žádné vnitřní stavy ani instanci.
+

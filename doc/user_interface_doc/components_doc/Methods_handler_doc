@@ -1,0 +1,32 @@
+
+Dokumentace třídy CodeHandler:
+
+Třída CodeHandler poskytuje statické metody pro kódování a dekódování dat.
+
+Metody:
+1. encode(input_file, config_manager, input_file_entry, output_file_entry, log_callback, log_error_callback):
+   Metoda pro kódování textu a uložení zakódovaných dat do souboru.
+
+   Parametry:
+   - input_file (str): Cesta k vstupnímu souboru.
+   - config_manager (ConfigurationManager): Instance Configuration Manageru pro načítání konfigurace.
+   - input_file_entry (QLineEdit): Widget pro zadání cesty vstupního souboru.
+   - output_file_entry (QLineEdit): Widget pro zadání cesty výstupního souboru.
+   - log_callback (function): Callback funkce pro logování zpráv o úspěšném průběhu operace.
+   - log_error_callback (function): Callback funkce pro logování chybových zpráv.
+
+2. decode(output_file, config_manager, output_file_entry, input_file_entry, show_decoded_text_callback,
+          log_callback, log_error_callback):
+   Metoda pro dekódování dat z uloženého souboru a zobrazení dekódovaného textu.
+
+   Parametry:
+   - output_file (str): Cesta k výstupnímu souboru s zakódovanými daty.
+   - config_manager (ConfigurationManager): Instance Configuration Manageru pro načítání konfigurace.
+   - output_file_entry (QLineEdit): Widget pro zadání cesty výstupního souboru.
+   - input_file_entry (QLineEdit): Widget pro zadání cesty vstupního souboru.
+   - show_decoded_text_callback (function): Callback funkce pro zobrazení dekódovaného textu.
+   - log_callback (function): Callback funkce pro logování zpráv o úspěšném průběhu operace.
+   - log_error_callback (function): Callback funkce pro logování chybových zpráv.
+
+Poznámka: Tato třída slouží k obsluze operací kódování a dekódování dat, které jsou prováděny ve spojení s kompresní logikou.
+

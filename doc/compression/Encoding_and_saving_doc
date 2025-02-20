@@ -1,0 +1,15 @@
+
+Dokumentace funkce encode_and_save:
+
+Funkce encode_and_save slouží k načtení vstupního textového souboru, zakódování jeho obsahu a uložení zakódovaných dat do binárního souboru.
+
+Parametry:
+- input_file (str): Cesta k vstupnímu textovému souboru. (Volitelný, pokud není poskytnut, použije se výchozí konfigurovaný vstupní soubor.)
+- output_file (str): Cesta k výstupnímu adresáři, kde bude uložen binární soubor. (Volitelný, pokud není poskytnut, použije se výchozí konfigurovaný výstupní adresář.)
+- output_file_name (str): Jméno výstupního binárního souboru. (Volitelný, pokud není poskytnut, použije se výchozí konfigurované jméno výstupního souboru s příponou '.bin'.)
+
+Výjimky:
+- ValueError: Vyvolá se, pokud nejsou poskytnuty vstupní soubor nebo výstupní soubor a nejsou konfigurovány výchozí hodnoty.
+
+Poznámka: Tato funkce používá třídu Encoder pro zakódování textu. Pokud dojde k chybě, funkce vypíše chybovou zprávu.
+
